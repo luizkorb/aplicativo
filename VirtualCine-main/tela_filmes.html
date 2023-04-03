@@ -5,54 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style_filmes.css" />
+    <link rel="stylesheet" href="style_barra.css" />
     <title>Filmes</title>
 </head>
 <body>
+  
     <div class="fundo">
      
-     <div class="cima"></div>
+     <div class="cima">
+      <div class="navigation">
+    <ul>
+        <li class="list active">
+            <a href="#">
+                <span class="icon"><ion-icon name="home"></ion-icon></span>
+                <span class="title">Home</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#">
+                <span class="icon"><ion-icon name="person-circle"></ion-icon></span>
+                <span class="title">Usuario</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#">
+                <span class="icon"><ion-icon name="chatbubble-ellipses"></ion-icon></span>
+                <span class="title">Notificações</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#">
+                <span class="icon"><ion-icon name="settings-sharp"></ion-icon></span>
+                <span class="title">Configurações</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="faleconosco.html">
+                <span class="icon"><ion-icon name="information-circle"></ion-icon></span>
+                <span class="title">Fale Conosco</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#">
+                <span class="icon"><ion-icon name="log-out"></ion-icon></span>
+                <span class="title">Sair</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+const list = document.querySelectorAll('.list');
+function activeLink(){
+    list.forEach((item) =>
+    item.classList.remove('active'));
+    this.classList.add('active');
+}
+    list.forEach((item)=>
+    item.addEventListener('click', activeLink));     
+
+</script></div>
         <div class="principal">
-            <img src="cityofdeus.jpg" width="100%" height="130%">
+            <img src="imagensfilmes/cityofdeus.jpg" width="100%" height="100%">
         </div>
         <div class="carrossel1">
           <div class="texto">Animações DC Comics</div>
             <div class="filmes">
-                <img src="redson.jpg" height="100%">
+                <img src="imagensfilmes/redson.jpg" height="100%">
                 
-                <img src="batmansilencio.jfif" height="100%">
-                <img src="morteemfamilia.jpg" height="100%">
-                <img src="supermansemlimites.jpg" height="100%">
-                <img src="batmanscooby.jpg" height="100%">
-                <img src="batinimigos.jpg" height="100%">
-                <img src="flashpoint.webp" height="100%">
-                <img src="batmancapuz.jpg" height="100%">
+                <img src="imagensfilmes/batmansilencio.jfif" height="100%">
+                <img src="imagensfilmes/morteemfamilia.jpg" height="100%">
+                <img src="imagensfilmes/supermansemlimites.jpg" height="100%">
+                <img src="imagensfilmes/batmanscooby.jpg" height="100%">
+                <img src="imagensfilmes/batinimigos.jpg" height="100%">
+                <img src="imagensfilmes/flashpoint.webp" height="100%">
+                <img src="imagensfilmes/batmancapuz.jpg" height="100%">
             </div>
         </div>
         <div class="carrossel1">
           <div class="texto">Filmes Da Disney</div>
             <div class="filmes">
-                <img src="filme1.jpg" height="100%;">
-                <img src="filme2.jpg" height="100%;">
-                <img src="filme3.jpg" height="100%;">
-                <img src="filme4.jpg" height="100%;">
-                <img src="filme6.webp" height="100%">
-                <img src="panteranegra.jpg" height="100%">
-                <img src="hulk.jpg" height="100%">
-                <img src="capitamarvel.jpg" height="100%">
+                <img src="imagensfilmes/filme1.jpg" height="100%;">
+                <img src="imagensfilmes/filme2.jpg" height="100%;">
+                <img src="imagensfilmes/filme3.jpg" height="100%;">
+                <img src="imagensfilmes/filme4.jpg" height="100%;">
+                <img src="imagensfilmes/filme6.webp" height="100%">
+                <img src="imagensfilmes/panteranegra.jpg" height="100%">
+                <img src="imagensfilmes/hulk.jpg" height="100%">
+                <img src="imagensfilmes/capitamarvel.jpg" height="100%">
                 
             </div>
         </div>
         <div class="carrossel1">
           <div class="texto">Filmes</div>
             <div class="filmes">
-                <img src="matrix.jpg" height="100%">
-                <img src="filme7.webp" height="100%">
-                <img src="batman.jpg" height="100%" >
-                <img src="lanternaverde.png" height="100%">
-                <img src="filme10.jpg" height="100%">
-                <img src="devolta.webp" height="100%">
-                <img src="johnwick.webp" height="100%">
-                <img src="filme5.jpg" height="100%">
+                <img src="imagensfilmes/matrix.jpg" height="100%">
+                <img src="imagensfilmes/filme7.webp" height="100%">
+                <img src="imagensfilmes/batman.jpg" height="100%" >
+                <img src="imagensfilmes/lanternaverde.png" height="100%">
+                <img src="imagensfilmes/filme10.jpg" height="100%">
+                <img src="imagensfilmes/devolta.webp" height="100%">
+                <img src="imagensfilmes/johnwick.webp" height="100%">
+                <img src="imagensfilmes/filme5.jpg" height="100%">
                 
             </div>
         </div>
@@ -61,14 +117,14 @@
         <div class="carrossel1">
             <div class="texto">Recomendado</div>
                 <div class="filmes"> 
-                <img src="cityofgod.jpg" height="100%">
-                <img src="coringa.jpg" height="100%">
-                <img src="clubedaluta.jpg" height="100%">
-                <img src="boyznthehood.jpg" height="100%">
-                <img src="coachcarter.jpg" height="100%">
-                <img src="olobo.jfif" height="100%">
-                <img src="che.jpg" height="100%">
-                <img src="killbill.jpg.crdownload" height="100%">
+                <img src="imagensfilmes/cityofgod.jpg" height="100%">
+                <img src="imagensfilmes/coringa.jpg" height="100%">
+                <img src="imagensfilmes/clubedaluta.jpg" height="100%">
+                <img src="imagensfilmes/boyznthehood.jpg" height="100%">
+                <img src="imagensfilmes/coachcarter.jpg" height="100%">
+                <img src="imagensfilmes/olobo.jfif" height="100%">
+                <img src="imagensfilmes/che.jpg" height="100%">
+                <img src="imagensfilmes/killbill.jpg.crdownload" height="100%">
                 </div>   
             </div>
         </div>

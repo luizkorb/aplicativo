@@ -1,0 +1,23 @@
+body{
+    width:98vw;
+    height:97vh;
+    background-color:rgb(12,12,12);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    align-content:center;
+    justify-items:center;
+    justify-content:center;
+}
+.tela{
+    width:200px;
+    height:120px;
+    background-color:#00507e;
+    border-radius:10px;
+}
+.bordado{
+    width:200px;
+    height:120px;
+    border:2px;
+    background-color:green;
+}
