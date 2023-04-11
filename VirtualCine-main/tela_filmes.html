@@ -13,7 +13,12 @@
     <div class="fundo">
      
      <div class="cima">
-      <div class="navigation">
+        <div class="divBotao" onclick='activeLink()'>
+
+            <img src="barras.png" >
+        </div>
+
+      <div class="navigation" id ="navigation">
     <ul>
         <li class="list active">
             <a href="#">
@@ -62,13 +67,20 @@ function activeLink(){
     list.forEach((item) =>
     item.classList.remove('active'));
     this.classList.add('active');
+    var navigation = document.getElementById("navigation");
+    navigation.style.display = "flex";
+
+
 }
     list.forEach((item)=>
     item.addEventListener('click', activeLink));     
 
-</script></div>
+</script>
+
+</div>
+        
         <div class="principal">
-            <img src="imagensfilmes/cityofdeus.jpg" width="100%" height="100%">
+            <img src="imagensfilmes/cityofdeus.jpg" width="96%" height="100%">
         </div>
         <div class="carrossel1">
           <div class="texto">Animações DC Comics</div>
@@ -130,5 +142,21 @@ function activeLink(){
         </div>
      </div>
     </div>
+    <map name="menu">
+    <area onmouseleave="Esconder();" onmouseover="MostraTexto('MENU')" shape="circle"coords="10,25,20" href="" target="_self">
+    <div class="menu" href="style.barra.css"></div>
+    </map>
 </body>
+<script>
+    function Esconder(){
+     menu.style.display="flex";
+     
+    }
+    function MostraMenu(estado)
+    {
+            if(estado == 'MENU')
+            {
+                menu.style.display="block";
+            }
+    </script>
 </html>

@@ -25,7 +25,7 @@ body,html
  }
 .meio
 {
-    width: 30%;
+    width: 500px;
     height: 80%;
     background-color: rgb(37, 37, 37);
     display: flex;
@@ -113,4 +113,14 @@ a.link2
     text-decoration: none;
     color: rgb(35, 149, 255);
     cursor: pointer;
+}
+
+.submit{
+    width: 45%;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #0069a7;
+    color: white;
 }

@@ -14,6 +14,7 @@ body{
 }
 
 .navigation{
+  display:none;
   position: absolute;
   height: 300vh;
   background: rgb(12,12,12);

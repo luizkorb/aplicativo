@@ -10,7 +10,7 @@ body{
 .fundo
 {
     width: 100%;
-    height: 300vh;
+    height: 316vh;
     background-color: rgb(12,12,12);
     display: flex;
     flex-direction: column;
@@ -18,15 +18,31 @@ body{
 }
 .cima
 {
+    display:flex;
     width:100%;
-    height:2%;
-    background-color: #00507e;
+    height:50px;
+    background-color: #003049;
+    align-items:center;
+    align-content:center;
+    justify-items:center;
+    justify-content:space-between;
+
+}
+.divBotao{
+    width: 100px;
+    height: 50px;
+    display: flex;
+
+}
+.divBotao:hover{
+
+    cursor:pointer;
 }
 .principal
 {
     width:100%;
-    height:38%;
-    
+    height:33%;
+    margin-left: 70px;
     display:flex;
     flex-direction:column;
 }
@@ -36,7 +52,7 @@ body{
     width:100%;
     height:15%;
     margin-left:0px;
-    background-color: #00507e;
+    background-color: #003049;
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -46,12 +62,13 @@ body{
 }
 .filmes
 {
+    margin-left: 170px;
     width:100%;
     height:80%;
     display:flex;
     flex-direction:row;
-    justify-content:flex-end;
-    background-color:rgb(2, 1, 14);
+    justify-content:space-around;
+    background-color: #003049;
 
 }
 
