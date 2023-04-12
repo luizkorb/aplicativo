@@ -5,77 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style_filmes.css" />
-    <link rel="stylesheet" href="style_barra.css" />
+    <link rel="stylesheet" href="estilo.css">
     <title>Filmes</title>
 </head>
 <body>
-  
+    
     <div class="fundo">
      
-     <div class="cima">
-        <div class="divBotao" onclick='activeLink()'>
-
-            <img src="barras.png" >
+      <div class="cima">
+            <input type="checkbox" id="chec">
+    <label for="chec">
+        
+        <img src="barras.png">
+    </label>
+    <nav>   
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            </ul>
+        </nav>
         </div>
 
-      <div class="navigation" id ="navigation">
-    <ul>
-        <li class="list active">
-            <a href="#">
-                <span class="icon"><ion-icon name="home"></ion-icon></span>
-                <span class="title">Home</span>
-            </a>
-        </li>
-        <li class="list">
-            <a href="#">
-                <span class="icon"><ion-icon name="person-circle"></ion-icon></span>
-                <span class="title">Usuario</span>
-            </a>
-        </li>
-        <li class="list">
-            <a href="#">
-                <span class="icon"><ion-icon name="chatbubble-ellipses"></ion-icon></span>
-                <span class="title">Notificações</span>
-            </a>
-        </li>
-        <li class="list">
-            <a href="#">
-                <span class="icon"><ion-icon name="settings-sharp"></ion-icon></span>
-                <span class="title">Configurações</span>
-            </a>
-        </li>
-        <li class="list">
-            <a href="faleconosco.html">
-                <span class="icon"><ion-icon name="information-circle"></ion-icon></span>
-                <span class="title">Fale Conosco</span>
-            </a>
-        </li>
-        <li class="list">
-            <a href="#">
-                <span class="icon"><ion-icon name="log-out"></ion-icon></span>
-                <span class="title">Sair</span>
-            </a>
-        </li>
-    </ul>
-</div>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-<script>
-const list = document.querySelectorAll('.list');
-function activeLink(){
-    list.forEach((item) =>
-    item.classList.remove('active'));
-    this.classList.add('active');
-    var navigation = document.getElementById("navigation");
-    navigation.style.display = "flex";
+         
+    </div>
+     
 
 
-}
-    list.forEach((item)=>
-    item.addEventListener('click', activeLink));     
-
-</script>
 
 </div>
         
@@ -141,22 +99,6 @@ function activeLink(){
             </div>
         </div>
      </div>
-    </div>
-    <map name="menu">
-    <area onmouseleave="Esconder();" onmouseover="MostraTexto('MENU')" shape="circle"coords="10,25,20" href="" target="_self">
-    <div class="menu" href="style.barra.css"></div>
-    </map>
+    </div>  
 </body>
-<script>
-    function Esconder(){
-     menu.style.display="flex";
-     
-    }
-    function MostraMenu(estado)
-    {
-            if(estado == 'MENU')
-            {
-                menu.style.display="block";
-            }
-    </script>
 </html>
