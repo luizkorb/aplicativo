@@ -3,7 +3,7 @@ body{
     height:300vh;
     margin: 0px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     overflow-x: hidden;
     justify-content:flex-end;
 }
@@ -36,7 +36,7 @@ body{
     height:33%;
     margin-left: 70px;
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
 }
 
 .carrossel1
