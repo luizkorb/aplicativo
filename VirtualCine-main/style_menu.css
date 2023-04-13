@@ -6,7 +6,7 @@
    padding:20px 5px;
 }
 
-img{
+.img2{
     width:40px;
 }
 
@@ -16,9 +16,9 @@ input[type="checkbox"]
 }
 
 nav{
-    background-color:rgba(161, 26, 26);
+    background-color:#1370a1;
     width:350px;
-    height:100%;
+    height:600px;
     left:-350px;
     position:absolute;
     transition:all .5s;
@@ -29,8 +29,9 @@ input[type="checkbox"]:checked~nav
     transform:translateX(350px);
 }
 ul{
-    
-    top:70px;
+    margin-left: 50px;
+    font-size: 30px;
+    top:300px;
     position:absolute;
     width:100%;
 }
